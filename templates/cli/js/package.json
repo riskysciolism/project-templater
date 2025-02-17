@@ -1,0 +1,52 @@
+{
+	"name": "@riskysciolism/<appName>",
+	"version": "1.0.0",
+	"type": "module",
+	"description": "description",
+	"author": {
+		"name": "Richard Musebrink"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"main": "src/main.js",
+	"bin": {
+		"<appName>": "src/main.js"
+	},
+	"scripts": {
+		"lint": "eslint . --fix && prettier --write .",
+		"postinstall": "husky",
+		"test": "echo 'Error: no test specified' && exit 1"
+	},
+	"engines": {
+		"node": ">=22.0.0"
+	},
+	"publishConfig": {
+		"access": "restricted"
+	},
+	"bundleDependencies": [],
+	"dependencies": {
+		"commander": "^13.1.0",
+		"dot-properties": "^1.1.0",
+		"fs-extra": "^11.3.0"
+	},
+	"devDependencies": {
+		"@types/node": "^22.13.4",
+		"eslint": "^9.20.1",
+		"eslint-config-prettier": "^10.0.1",
+		"eslint-plugin-no-relative-import-paths": "^1.6.1",
+		"globals": "^15.15.0",
+		"husky": "^9.1.7",
+		"lint-staged": "^15.4.3",
+		"prettier": "^3.5.1"
+	},
+	"lint-staged": {
+		"**/*.js": [
+			"eslint --fix",
+			"prettier --write"
+		]
+	},
+	"prettier": {
+		"printWidth": 140,
+		"useTabs": true,
+		"singleQuote": true
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"name": "@riskysciolism/project-templater",
+	"version": "1.0.4",
+	"description": "Interactive project template generator",
+	"type": "module",
+	"author": {
+		"name": "Richard Musebrink"
+	},
+	"bin": {
+		"project-templater": "./bin/create-project.js"
+	},
+	"scripts": {
+		"lint": "eslint . --fix && prettier --write ."
+	},
+	"dependencies": {
+		"fs-extra": "^11.3.0",
+		"inquirer": "^12.4.2"
+	},
+	"devDependencies": {
+		"prettier": "^3.5.1",
+		"eslint": "^9.20.1",
+		"eslint-config-prettier": "^10.0.1",
+		"eslint-plugin-no-relative-import-paths": "^1.6.1"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"prettier": {
+		"printWidth": 140,
+		"useTabs": true,
+		"singleQuote": true
+	}
+}
