@@ -1,8 +1,8 @@
-# Template Generator
+# Project Templater
 
 ## Overview
 
-Template Generator is a tool designed to help developers quickly generate project templates. It supports various programming languages and frameworks, making it easier to start new projects with a solid foundation.
+Project Templater is a tool designed to help developers quickly generate project templates. It supports various programming languages and frameworks, making it easier to start new projects with a solid foundation.
 
 ## Features
 
@@ -13,10 +13,10 @@ Template Generator is a tool designed to help developers quickly generate projec
 
 ## Installation
 
-To install Template Generator, run the following command:
+To install Project Templater, run the following command:
 
 ```sh
-npm install -g template-generator
+npm install -g project-templator
 ```
 
 ## Usage
@@ -26,13 +26,13 @@ To generate a new project template, use one of the following commands:
 ### Using Global Installation
 
 ```sh
-template-generator
+project-templator
 ```
 
 ### Using npx
 
 ```sh
-npx template-generator
+npx project-templator
 ```
 
 ## License
